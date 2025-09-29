@@ -22,7 +22,7 @@ class Hipotenusa:
 
 def main():
     """
-    Main que pide dos valores por consola y calcula la hipotenusa de estos con la clase Hipotenusa
+    Pide dos valores por consola y calcula la hipotenusa de estos con la clase Hipotenusa
     """
 
     cat1:float = float(input("Ingrese el valor del cateto 1: "))
