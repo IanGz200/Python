@@ -2,12 +2,15 @@ class ImparMayorCien:
     """
     Clase impar_mayor_cien que contie metodos para evaluar numeros impares y mayor a cien
     """
+
+    numero:int
+
     def __init__(self,numero:int):
         """
         Constructor ImparMayorCien
         :param numero: numero a comprobar
         """
-        self.numero:int = numero
+        self.numero = numero
 
     def impar(self)->bool:
         """
