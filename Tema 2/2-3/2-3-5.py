@@ -5,7 +5,7 @@ match qualification:
         print("Matricula de honor")
     case 9:
         print("Sobresaliente")
-    case 7:
+    case x if x >= 7:
         print("Notable")
     case 6:
         print("Bien")
