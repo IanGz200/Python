@@ -1,4 +1,7 @@
 class Hotel:
+    """
+    Clase que calcula el precio de una habitación segun las características del cliente
+    """
 
     age:int
     student:bool
@@ -14,6 +17,10 @@ class Hotel:
         self.large_family = large_family
 
     def room_price(self):
+        """
+        Calcula el precio de la habitación
+        :return: Precio
+        """
         if self.age < 30:
             if self.student and self.unemployed:
                 return 35
@@ -30,6 +37,10 @@ class Hotel:
             return 75
 
 def main():
+    """
+    Metodo main
+    :return: Devuelve el precio de la habitación
+    """
     hotel = Hotel(31,False,False,True,False)
     print("El precio de la habitación es: ",hotel.room_price(),"€",sep="")
 
