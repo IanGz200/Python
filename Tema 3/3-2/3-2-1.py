@@ -1,4 +1,7 @@
 class Matrix:
+    """
+    Clase que implementa una matriz y metodos para hacer calculo entre estas
+    """
     matrix:list[list[int]]=[[0,0,0],[0,0,0],[0,0,0]]
 
     def __init__(self) -> None:
@@ -8,6 +11,11 @@ class Matrix:
 
 
     def sum(self,m2)->list[list[int]]:
+        """
+        Suma dos matrices casilla por casilla
+        :param m2: Una matriz
+        :return: La suma de ambas matrices
+        """
         for row in range(len(self.matrix)):
             for col in range(len(self.matrix[row])):
                 self.matrix[row][col] += m2[row][col]
