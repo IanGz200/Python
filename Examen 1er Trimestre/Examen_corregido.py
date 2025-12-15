@@ -1,6 +1,5 @@
 import random
 
-
 class ColorCombination:
     """
     Esta clase implementa unha combinación de cores, que usaremos tanto para a combinación de cores oculta como a
@@ -83,7 +82,6 @@ class ColorCombination:
 
         return cont
 
-
 class BrainBreaker:
     """
     Esta clase implementa unha partida do xogo, no que o usuario terá que adiviñar unha combinación de cores oculta que
@@ -128,14 +126,12 @@ class BrainBreaker:
 
             a.colors.append(color)
 
-
         """Muestra los aciertos"""
         print("Colores acertados en posición incorrecta:",
               a.get_common_colors(self.hidden_colors)-a.get_hits(self.hidden_colors))
         print("Colores acertados en posición correcta:", a.get_hits(self.hidden_colors))
 
         self.intentos.append(a)
-
 
     def is_game_over(self) -> bool:
         """
@@ -160,7 +156,6 @@ class BrainBreaker:
         else:
             print("Perdeu")
 
-
 def main():
     """
     Metodo main que inicializa la aplicacion
@@ -175,7 +170,6 @@ def main():
             resposta = input("Queres xogar outra partida? y/n")
 
     print("Ata outra")
-
 
 if __name__ == "__main__":
     main()
