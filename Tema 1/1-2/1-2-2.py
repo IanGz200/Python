@@ -5,7 +5,7 @@ Clase que devuelve segundos en formato hora minutos y segundos
 """
 class Segundos:
 
-    segundos:int=150001
+    segundos:int=325
 
     horas:int =trunc(segundos/3600)
 
